@@ -1,0 +1,144 @@
+body{
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url("./images/bg-intro-desktop.png");
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.left{
+    margin-top: 5%;
+    margin-right: 5%;
+    width: 30%;
+}
+
+.title{
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.inputs{
+    display: block;
+    width: 93%;
+    margin-bottom: 20px;
+    height: 50px;
+    border-color: hsl(246, 25%, 77%);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 30px;
+    font-weight: 700;
+    color: hsl(249, 10%, 26%) ;
+}
+
+input:focus {
+    border: 1px solid hsl(248, 32%, 49%);
+
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px rgba(0,0,0,0.2);
+    padding: 40px;
+}
+
+.try{
+    background:  hsl(248, 32%, 49%);
+    padding: 5px 150px 5px 150px;
+    border-radius: 10px;
+    box-shadow: 0px 10px rgba(0,0,0,0.2);
+    margin-bottom: 50px;
+}
+
+.claim{
+    height: 70px;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px hsl(154, 57%, 41%);
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.claim:hover{
+    background-color: hsl(154, 77%, 58%);
+}
+.claim:focus{
+    border: none;
+}
+
+.agree{
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+span{
+    color:hsl(0, 100%, 74%);
+    font-weight: 500;
+}
+
+.decription{
+    line-height: 2;
+    font-weight: 500;
+    width: 65%;
+}
+
+@media (max-width:500px){
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        text-align: center;
+    }
+    .title{
+        font-size: 30px;
+        width: 80%;
+        margin-top: 100%;
+        margin-left: 15%;
+    }
+    .decription{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .left{
+        width: 100%;
+    }
+    .try{
+        padding: 0;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+    }
+    .input{
+        padding: 20px;
+    }
+    span{
+        display: inline;
+    }
+    .agree{
+        display:inline;
+    }
+}
